@@ -20,7 +20,7 @@ body {
     top: 0px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #FFFFFF;
+     background: linear-gradient(to right, #3A6073, #16222A);
 }
 
 /* Header */
@@ -44,8 +44,13 @@ header {
 }
 
 .socialicon {
-    width: 90px;
+    width: 55px;
+       transition: 1.3s;
+}
 
+.socialicon:hover{
+    filter: invert(100);
+    transition: 1.3s;
 }
 
 .socialicon a:link {
@@ -309,7 +314,7 @@ footer {
 }
 
     .socialicon {
-        width: 50px;
+        width: 40px;
     }
 
     .text_column {
@@ -366,7 +371,7 @@ footer {
 }
 
     .socialicon {
-        width: 50px;
+        width: 35px;
     }
 
     .text_column {
@@ -428,7 +433,7 @@ footer {
 }
 
     .socialicon {
-        width: 50px;
+        width: 35px;
     }
 
     .thumbnail {
@@ -452,6 +457,7 @@ footer {
     background-color: brown;
     font-family: 'Paytone One', sans-serif;
     height: 80px;
+    border-radius: 0px 0px 40px 40px;
 
 }
 .btnn {
