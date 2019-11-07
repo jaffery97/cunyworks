@@ -16,45 +16,9 @@ font-family: 'Paytone One', sans-serif;
 -->
     
     <style>
-    @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 
 
-.pp {
-  border-right: solid 5px rgba(255,255,255,.75);
-  white-space: nowrap;
-  overflow: hidden;    
-  font-family: 'Source Code Pro', monospace;  
-  font-size: 28px;
-  color: rgba(255,255,255,.70);
-     text-align: left;
-  position: relative;
-    left: 25%;
-    transform: translateX(7%);
-}
-
-/* Animation */
-.pp {
-  animation: animated-text 4s linear 1s 1 normal both,
-             animated-cursor 600ms ease-out infinite;
-   
-}
-
-/* text animation */
-
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 60%;}
-}
-
-/* cursor animations */
-
-@keyframes animated-cursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
-
-Resources
     </style>
 </head>
 
@@ -70,7 +34,7 @@ Resources
             <div class="column">
                 <img src="images/profile.png" alt="" class="profile">
                 <h1 style="color: white;">MH Jafory</h1>
-                <div class="pp">Web Developer</div>
+                <div id="demo"></div>
             </div>
             <div class="column">
                 <h2 style="text-align: left;color: aliceblue;font-weight: bold;position: relative; left: 33px;">Who Am I?</h2>
@@ -240,4 +204,21 @@ Resources
         <div class="copyright"> <strong> 2019 -CUNYTECHWORKS &copy; MH JAFORY </strong></div>
     </div>
     <!-- Main Container Ends -->
+    
+    
+    <script>
+var i = 0;
+var txt = 'I am A Web Developer';
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter();
+</script>
 </body></html>
