@@ -10,7 +10,7 @@ body {
     background: linear-gradient(to right, #26D0CE, #1A2980);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    margin: 0;
+    margin: 0;padding: 0;
 }
 
 /* Container */
@@ -454,11 +454,13 @@ footer {
 
 
 .header {
-    background-color: brown;
+    background-color: #092b2a;
     font-family: 'Paytone One', sans-serif;
     height: 80px;
     border-radius: 0px 0px 40px 40px;
-
+    position:fixed;
+    z-index: 999;
+   
 }
 .btnn {
     text-align: center;
