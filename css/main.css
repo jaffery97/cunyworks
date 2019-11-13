@@ -117,7 +117,6 @@ a:link {
     padding-top: 0px;
     margin-top: -5px;
     margin-bottom: 0px;
-  
 }
 
 .gal:hover .thumbnail {
@@ -146,6 +145,7 @@ a:link {
     border-radius: 20px;
     position: relative;
     display: inline-block;
+    z-index: 999;
 
 }
 
@@ -154,7 +154,7 @@ a:link {
     padding-bottom: 25px;
     padding-top: 15px;
     transition: 1s;
-    z-index: 2;
+    z-index: 333;
 }
 
 .gallery .thumbnail h4 {
@@ -188,7 +188,7 @@ a:link {
   background-image: url(../slide/4.jpg);
      animation: intro 50s linear infinite;
  height: 100%;
-   border-radius: 0px 50% 0px 0px;
+/*       border-radius: 0px 50% 0px 0px;*/
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
@@ -201,7 +201,7 @@ a:link {
    
     left: 0;
     right: 0;
-  z-index: 444;
+  z-index: 222;
      filter:none;
     position: relative;
     height: 100vh;
@@ -218,11 +218,19 @@ a:link {
     font-size: 20px;
     padding-bottom: 35px;
    
-   
-  
 }
-
-
+.intro:after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(25deg);
+  transform-origin: 0%;
+    z-index: -1; }
 
 @keyframes intro {
     
@@ -445,6 +453,7 @@ footer {
     background: #485563;
     padding-top: 60px;
     padding-bottom: 60PX;
+  
 }
 
 .intro {
