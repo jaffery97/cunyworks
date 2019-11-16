@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <title>Contact Me</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans|Paytone+One|Righteous|Squada+One&display=swap" rel="stylesheet">
+    <!--
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Squada One', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Paytone One', sans-serif;
+-->
+</head>
+
+
+
+<body>
+    <div id="my_div" class="hide">
+        <!-- Main Container -->
+        <div class="container">
+            <!-- Header -->
+            <header class="header animated fadeInDown delay-2s">
+                <div class="logo" style="text-align:left;">CONTACT ME</div>
+                 
+            </header>
+ <span onclick="openNav()" class="nav animated fadeInDown delay-2s">&#9776;</span>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">HOME</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+
+           
+
+            <!-- Hero Section --> 
+
+            <div style="height: 70px;"></div>
+            
+                 <!-- Hero Section -->
+        <section class="intro">
+        <div class="column animated zoomInRight delay-3s">
+                <img src="images/LOGO.png" alt="" class="profile">
+                <h1 style="color: white;">MH Jafory</h1>
+           
+<div id="demo"></div>
+            
+         
+                
+            </div>
+            <div class="column animated zoomInLeft delay-4s" >
+<h2 style="text-align: left;color: aliceblue;font-weight: bold;">Who Am I?</h2>
+                <hr>
+
+                <p style="text-align: justify">
+                   Full-stack web developer with a passion for metrics and beating former "best-yets." and a flair for creating elegant solutions in the least amount of time. Developed an e-commerce web app, customer web portal, and documentary launch website. Prototyped new features per year for DHNY Inc. Decreased rework by 22% and costs by 15%. Consistently receive high user experience scores for all web development projects, including a 55% increase for DHNY Inc. Passionate about building world-class web applications. One of my sites received a 2015 Webby for Best Navigation and Structure. 
+<br>
+<br>
+ Also, I passionate about software engineering. Regular attendee of web developer meetups and hackathons. Even I reached the final in NY City-Wide High School Web Contest in 2017.
+                </p>
+                <p style="text-align: justify">I'm going to share all my class web project what I have done during my semester. I hope you all like my projects and please contact me at <a href="mailto:mhjafory@gmail.com" style="color: aliceblue"> mhjafory@gmail.com</a> if you want any help about web issues. </p>
+            </div>
+            <br>
+            <br>
+            <br>
+        </section>
+            
+         </div>
+        <!-- Footer Section -->
+        <footer id="contact">
+            <p class="hero_header">GET IN TOUCH WITH ME</p>
+            <div class="button"><a href="mailto:mhjafory@gmail.com" style="color: aliceblue;text-decoration: none;"> EMAIL ME</a> </div>
+        </footer>
+        <!-- Copyrights Section -->
+        <div class="copyright"> <strong> 2019 -CUNYTECHWORKS &copy; MH JAFORY </strong></div>
+    </div>
+    <script>
+        var i = 0;
+        var txt = '{ I Am A Web Developer + Software Engineering }';
+        var speed = 100;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        function myText() {
+            setTimeout(function()
+
+                {
+                    typeWriter();
+                }
+
+                , 8000);
+        }
+
+        console.log(myText());
+    </script>
+
+    <script type="text/javascript" src="js/nav.js" language="javascript"></script>
+
+    <script type="text/javascript" language="javascript">
+        <!-- Hide from browsers without javascript
+        window.onload = function() //executes when the page finishes loading
+        {
+            setTimeout(func1, 1400); //sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
+
+        };
+
+        function func1() {
+            document.getElementById("my_div").className = "show";
+        }
+
+        // End hiding 
+        -->
+    </script>
+
+
+
+    <!-- Main Container Ends -->
+    <!-- Main Container Ends -->
+</body></html>
