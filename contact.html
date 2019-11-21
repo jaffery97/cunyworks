@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <title>Contact Me</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
@@ -28,9 +28,9 @@ font-family: 'Paytone One', sans-serif;
             <!-- Header -->
             <header class="header animated fadeInDown delay-2s">
                 <div class="logo" style="text-align:left;">CONTACT ME</div>
-                 
+
             </header>
- <span onclick="openNav()" class="nav animated fadeInDown delay-2s">&#9776;</span>
+            <span onclick="openNav()" class="nav animated fadeInDown delay-2s">&#9776;</span>
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="index.html">HOME</a>
@@ -38,41 +38,44 @@ font-family: 'Paytone One', sans-serif;
                 <a href="contact.html">CONTACT</a>
             </div>
 
-           
 
-            <!-- Hero Section --> 
+
+            <!-- Hero Section -->
 
             <div style="height: 70px;"></div>
-            
-                 <!-- Hero Section -->
-        <section class="intro">
-        <div class="column animated zoomInRight delay-3s">
-                <img src="images/LOGO.png" alt="" class="profile">
-                <h1 style="color: white;">MH Jafory</h1>
-           
-<div id="demo"></div>
-            
-         
-                
-            </div>
-            <div class="column animated zoomInLeft delay-4s" >
-<h2 style="text-align: left;color: aliceblue;font-weight: bold;">Who Am I?</h2>
-                <hr>
 
-                <p style="text-align: justify">
-                   Full-stack web developer with a passion for metrics and beating former "best-yets." and a flair for creating elegant solutions in the least amount of time. Developed an e-commerce web app, customer web portal, and documentary launch website. Prototyped new features per year for DHNY Inc. Decreased rework by 22% and costs by 15%. Consistently receive high user experience scores for all web development projects, including a 55% increase for DHNY Inc. Passionate about building world-class web applications. One of my sites received a 2015 Webby for Best Navigation and Structure. 
+            <!-- Hero Section -->
+            <section class="contt">
+
+                <div class="animated zoomIn delay-3s">
+                    <form class="contai " method="get" action="mail.php">
+                        <h1>SIGN UP</h1>
+
+                        <label for="name"><b>Full Name</b></label>
+                        <input type="text" placeholder="Full Name" name="name" required>
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="number"><b>Phone</b></label>
+                        <input type="tel" placeholder="Enter Phone Number" name="phone" required>
+
+                        <label for="Request"><b>Request Phone Call:</b></label>
+                        Yes:<input type="checkbox" value="Yes" name="call"> 
+                        No:<input type="checkbox" value="No" name="call">
 <br>
 <br>
- Also, I passionate about software engineering. Regular attendee of web developer meetups and hackathons. Even I reached the final in NY City-Wide High School Web Contest in 2017.
-                </p>
-                <p style="text-align: justify">I'm going to share all my class web project what I have done during my semester. I hope you all like my projects and please contact me at <a href="mailto:mhjafory@gmail.com" style="color: aliceblue"> mhjafory@gmail.com</a> if you want any help about web issues. </p>
-            </div>
-            <br>
-            <br>
-            <br>
-        </section>
-            
-         </div>
+                        <label for="message"><b>Messages</b></label>
+                        <textarea placeholder="Write here" name="message" required style="height: 140px;"></textarea>
+                        <br>
+                        <br>
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+
+                </div>
+            </section>
+
+        </div>
         <!-- Footer Section -->
         <footer id="contact">
             <p class="hero_header">GET IN TOUCH WITH ME</p>
