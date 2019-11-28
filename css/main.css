@@ -314,14 +314,26 @@ a:link {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
+    position: relative;
+    top: 20%;
     color: #818181;
     display: block;
     transition: 0.3s;
+/*
+    
+    font-family: 'Righteous', cursive;
+*/
+/*font-family: 'Fredoka One', cursive;*/
+font-family: 'Paytone One', sans-serif;
 
 }
 
 .sidenav a:hover {
     color: #f1f1f1;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+    transition: 1s;
+    text-shadow: 0px 0px 100px white;
 }
 
 .sidenav .closebtn {
@@ -339,6 +351,7 @@ a:link {
 
     .sidenav a {
         font-size: 18px;
+        
     }
 }
 
@@ -530,7 +543,7 @@ footer {
     .gallery {
         clear: both;
         display: inline-block;
-        width: 90%;
+        width: 100%;
         background-color: #FFFFFF;
         /* [disabled]min-width: 400px;
 */
@@ -613,6 +626,12 @@ footer {
         margin-left: 0px;
 
     }
+    
+    .logo:hover {
+        transition: 1s;
+    text-shadow: 0px 0px 100px white;
+        font-size: 20px;
+    }
 
     .contt {
         height: 100%;
@@ -628,7 +647,7 @@ footer {
     .gallery {
         clear: both;
         display: inline-block;
-        width: 90%;
+        width: 100%;
         background-color: #FFFFFF;
         /* [disabled]min-width: 400px;
 */
@@ -707,7 +726,7 @@ footer {
     .gallery {
         clear: both;
         display: inline-block;
-        width: 90%;
+        width: 100%;
         background-color: #FFFFFF;
         /* [disabled]min-width: 400px;
 */
@@ -823,8 +842,8 @@ input[type=tel]:focus {
     cursor: pointer;
     position: relative;
     margin: auto;
-    left: 25%;
-    transform: translate(50%, -50%);
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0.9;
 }
 

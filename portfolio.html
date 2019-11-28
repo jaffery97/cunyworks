@@ -39,7 +39,7 @@ font-family: 'Paytone One', sans-serif;
                 <a href="contact.html">CONTACT</a>
             </div>
 
-            <span onclick="openNav()" class="nav animated fadeInDown delay-2s">&#9776;</span>
+            <span onclick="openNav()" class="nav animated fadeInDown delay-2s" >&#9776;</span>
 
             <!-- Hero Section -->
 
@@ -184,39 +184,14 @@ font-family: 'Paytone One', sans-serif;
         <!-- Copyrights Section -->
         <div class="copyright"> <strong> 2019 -CUNYTECHWORKS &copy; MH JAFORY </strong></div>
     </div>
-    <script>
-        var i = 0;
-        var txt = '{ I Am A Web Developer + Software Engineering }';
-        var speed = 100;
-
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("demo").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-
-        function myText() {
-            setTimeout(function()
-
-                {
-                    typeWriter();
-                }
-
-                , 8000);
-        }
-
-        console.log(myText());
-    </script>
-
+    
     <script type="text/javascript" src="js/nav.js" language="javascript"></script>
 
     <script type="text/javascript" language="javascript">
         <!-- Hide from browsers without javascript
         window.onload = function() //executes when the page finishes loading
         {
-            setTimeout(func1, 1400); //sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
+            setTimeout(func1, 100); //sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
 
         };
 

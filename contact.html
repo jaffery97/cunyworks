@@ -47,29 +47,30 @@ font-family: 'Paytone One', sans-serif;
             <!-- Hero Section -->
             <section class="contt">
 
-                <div class="animated zoomIn delay-3s">
+                <div class="animated fadeIn delay-3s">
                     <form class="contai " method="get" action="mail.php">
                         <h1>SIGN UP</h1>
 
-                        <label for="name"><b>Full Name</b></label>
+                        <br> <label for="name"><b>Full Name</b></label><br> 
                         <input type="text" placeholder="Full Name" name="name" required>
 
-                        <label for="email"><b>Email</b></label>
+                        <br> <label for="email"><b>Email</b></label> <br>
                         <input type="text" placeholder="Enter Email" name="email" required>
 
-                        <label for="number"><b>Phone</b></label>
+                        <br> <label for="number"><b>Phone</b></label> <br>
                         <input type="tel" placeholder="Enter Phone Number" name="phone" required>
 
-                        <label for="Request"><b>Request Phone Call:</b></label>
+                        <br> <label for="Request"><b>Request Phone Call:</b></label> &nbsp;
                         Yes:<input type="checkbox" value="Yes" name="call"> 
+                        &nbsp;
                         No:<input type="checkbox" value="No" name="call">
 <br>
 <br>
-                        <label for="message"><b>Messages</b></label>
+                        <br> <label for="message"><b>Messages</b></label> <br>
                         <textarea placeholder="Write here" name="message" required style="height: 140px;"></textarea>
                         <br>
                         <br>
-                        <button type="submit" class="btn">Login</button>
+                        <button type="submit" class="btn">SEND</button>
                     </form>
 
                 </div>
@@ -84,31 +85,7 @@ font-family: 'Paytone One', sans-serif;
         <!-- Copyrights Section -->
         <div class="copyright"> <strong> 2019 -CUNYTECHWORKS &copy; MH JAFORY </strong></div>
     </div>
-    <script>
-        var i = 0;
-        var txt = '{ I Am A Web Developer + Software Engineering }';
-        var speed = 100;
 
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("demo").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-
-        function myText() {
-            setTimeout(function()
-
-                {
-                    typeWriter();
-                }
-
-                , 8000);
-        }
-
-        console.log(myText());
-    </script>
 
     <script type="text/javascript" src="js/nav.js" language="javascript"></script>
 
@@ -116,7 +93,7 @@ font-family: 'Paytone One', sans-serif;
         <!-- Hide from browsers without javascript
         window.onload = function() //executes when the page finishes loading
         {
-            setTimeout(func1, 1400); //sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
+            setTimeout(func1, 100); //sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
 
         };
 

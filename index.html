@@ -41,10 +41,12 @@ font-family: 'Paytone One', sans-serif;
                 <a href="contact.html">CONTACT</a>
             </div>
 
-            <span onclick="openNav()" class="nav animated fadeInDown delay-2s">&#9776;</span>
+            <span onclick="openNav()" class="nav animated fadeInDown delay-2s" style="background-color: white;color: black;padding:7px 10px 7px 10px;border-radius: 10px;">&#9776;</span>
 
             <!-- Hero Section -->
+            
             <section class="intro">
+                <br><br>   <br>
                 <div class="column animated zoomInRight delay-3s">
 
                     <img src="images/LOGO.png" alt="" class="profile">
@@ -109,7 +111,7 @@ font-family: 'Paytone One', sans-serif;
                         typeWriter();
                     }
 
-                    , 8000);
+                    , 4000);
             }
 
             console.log(myText());
@@ -121,7 +123,7 @@ font-family: 'Paytone One', sans-serif;
             <!-- Hide from browsers without javascript
             window.onload = function() //executes when the page finishes loading
             {
-                setTimeout(func1, 1400); //sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
+                setTimeout(func1, 100); //sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
 
             };
 
