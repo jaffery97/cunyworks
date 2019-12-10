@@ -1,14 +1,17 @@
 /* Body */
 body {
     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-    background-size: cover;
     background-image: url(../images/WhoppingWaryGalah-small.gif);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: #2e2e2e;
     padding: 0;
     margin: 0;
-    background-position: center;
-    background-attachment: fixed;
+
 
 }
 
@@ -310,6 +313,9 @@ a:link {
     text-align: center;
 }
 
+
+
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -319,15 +325,16 @@ a:link {
     color: #818181;
     display: block;
     transition: 0.3s;
-/*
+    /*
     
     font-family: 'Righteous', cursive;
 */
-/*font-family: 'Fredoka One', cursive;*/
-font-family: 'Paytone One', sans-serif;
+    /*font-family: 'Fredoka One', cursive;*/
+    font-family: 'Paytone One', sans-serif;
 
 }
 
+/*
 .sidenav a:hover {
     color: #f1f1f1;
     font-size: 30px;
@@ -335,6 +342,37 @@ font-family: 'Paytone One', sans-serif;
     transition: 1s;
     text-shadow: 0px 0px 100px white;
 }
+*/
+
+
+.sidenav:hover a {
+    /*   filter: blur(10px);*/
+    opacity: .1;
+}
+
+.sidenav a:hover {
+    /*    filter: blur(0);*/
+    opacity: 10;
+    color: #f1f1f1;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+    transition: 1s;
+    text-shadow: 0px 0px 100px white;
+    animation: nav 3s ease-in-out infinite;
+    
+}
+
+@keyframes nav {
+    
+     0% {text-shadow: 0px 0px 33px cadetblue;}
+     20% {text-shadow: 0px 0px 33px deeppink;}
+     30% {text-shadow: 0px 0px 33px darkblue;}
+     40% {text-shadow: 0px 0px 33px mediumseagreen;}
+     50% {text-shadow: 0px 0px 33px mediumslateblue;}
+     60% {text-shadow: 0px 0px 33px blanchedalmond;}
+     100% {text-shadow: 0px 0px 33px dodgerblue;}
+}
+
 
 .sidenav .closebtn {
     position: absolute;
@@ -351,7 +389,7 @@ font-family: 'Paytone One', sans-serif;
 
     .sidenav a {
         font-size: 18px;
-        
+
     }
 }
 
@@ -595,11 +633,11 @@ footer {
 
     .contt {
         height: 100%;
-        
+
     }
 
     .contai {
-/*
+        /*
         position: relative;
         left: 0%;
         transform: translateX(0%);
@@ -626,24 +664,25 @@ footer {
         margin-left: 0px;
 
     }
-    
+
     .logo:hover {
         transition: 1s;
-    text-shadow: 0px 0px 100px white;
+        text-shadow: 0px 0px 100px white;
         font-size: 20px;
     }
 
     .contt {
         height: 100%;
     }
-    
-     .contai {
-/*
+
+    .contai {
+        /*
         position: relative;
         left: 0%;
         transform: translateX(0%);
 */
     }
+
     .gallery {
         clear: both;
         display: inline-block;
@@ -785,11 +824,11 @@ footer {
 }
 
 .contai {
-   position: absolute;
-  top: 0%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, 10%);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, 10%);
     box-shadow: 0px 0px 12px 0px,
         0px 0px 22px 0px,
         0px 0px 32px 0px,
@@ -806,7 +845,7 @@ footer {
 .contt {
     height: 100vh;
     display: flex;
-  align-items: center
+    align-items: center
 }
 
 /* Full-width input fields */

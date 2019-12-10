@@ -22,7 +22,10 @@ font-family: 'Paytone One', sans-serif;
 
 
 <body>
-    <div id="my_div" class="hide">
+
+    <!--    id="my_div" class="hide"-->
+
+    <div>
         <!-- Main Container -->
         <div class="container">
             <!-- Header -->
@@ -44,7 +47,7 @@ font-family: 'Paytone One', sans-serif;
             <span onclick="openNav()" class="nav animated fadeInDown delay-2s" style="background-color: white;color: black;padding:7px 10px 7px 10px;border-radius: 10px;">&#9776;</span>
 
             <!-- Hero Section -->
-            
+
             <section class="intro">
                 <br><br>
                 <div class="column animated zoomInRight delay-3s">
@@ -85,58 +88,65 @@ font-family: 'Paytone One', sans-serif;
             <!-- Footer Section -->
             <footer id="contact">
                 <p class="hero_header">GET IN TOUCH WITH ME</p>
-                <div class="button"><a href="mailto:mhjafory@gmail.com" style="color: aliceblue;text-decoration: none;"> EMAIL ME</a> </div>
+                <div class="button"><a href="mailto:contactme@mhjafory.com" style="color: aliceblue;text-decoration: none;"> EMAIL ME</a> </div>
             </footer>
             <!-- Copyrights Section -->
             <div class="copyright"> <strong> 2019 -CUNYTECHWORKS &copy; MH JAFORY </strong></div>
         </div>
     </div>
-        <script>
-            var i = 0;
-            var txt = '{ I Am A Web Developer + Software Engineer }';
-            var speed = 100;
+    <script>
+        var i = 0;
+        var txt = '{ I Am A Web Developer + Software Engineer }';
+        var speed = 100;
 
-            function typeWriter() {
-                if (i < txt.length) {
-                    document.getElementById("demo").innerHTML += txt.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, speed);
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        function myText() {
+            setTimeout(function()
+
+                {
+                    typeWriter();
                 }
-            }
 
-            function myText() {
-                setTimeout(function()
+                , 4000);
+        }
 
-                    {
-                        typeWriter();
-                    }
+        console.log(myText());
+    </script>
 
-                    , 4000);
-            }
+    <script type="text/javascript" src="js/nav.js" language="javascript"></script>
 
-            console.log(myText());
-        </script>
+    <!--    loading page-->
 
-        <script type="text/javascript" src="js/nav.js" language="javascript"></script>
+    <!--
+    <script type="text/javascript" language="javascript">
+//         Hide from browsers without javascript
+//        window.onload = function() //executes when the page finishes loading
+//        {
+//            setTimeout(func1, 50); //sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
+//
+//        };
+//
+//        function func1() {
+//            document.getElementById("my_div").className = "show";
+//        }
 
-        <script type="text/javascript" language="javascript">
-            <!-- Hide from browsers without javascript
-            window.onload = function() //executes when the page finishes loading
-            {
-                setTimeout(func1, 50); //sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
-
-            };
-
-            function func1() {
-                document.getElementById("my_div").className = "show";
-            }
-
-            // End hiding 
-            -->
-        </script>
+        // End hiding 
+        
+    </script>
+-->
 
 
 
-        <!-- Main Container Ends -->
-        <!-- Main Container Ends -->
-</body></html>
+
+    <!-- Main Container Ends -->
+    <!-- Main Container Ends -->
+</body>
+
+</html>
