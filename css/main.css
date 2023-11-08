@@ -588,6 +588,102 @@ footer {
 	padding-right: 20px;
 }
 
+
+
+.header {
+	/*    background-color: brown;*/
+	font-family: 'Paytone One', sans-serif;
+	/*    height: 40px;*/
+
+}
+
+.btnn {
+	text-align: center;
+	width: 100%;
+	background-color: transparent;
+}
+
+
+
+
+
+
+
+.nav {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	z-index: 679;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+}
+
+.contai {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, 10%);
+	box-shadow: 0px 0px 12px 0px;
+	top: 80px;
+	width: 50%;
+	padding: 15px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.contt {
+	height: 100vh;
+	display: flex;
+	align-items: center
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=tel],
+textarea {
+	width: 96%;
+	padding: 15px;
+	margin: 5px;
+	color: white;
+	border: none;
+	background: #010101;
+	border-radius: 0px 100px 100px 100px;
+}
+
+input[type=text]:focus,
+input[type=tel]:focus {
+	background-color: #ddd;
+	outline: none;
+	color: black;
+
+}
+
+
+
+/* Set a style for the submit button */
+.btn {
+	background-color: darkblue;
+	color: white;
+	padding: 16px 20px;
+	border-radius: 100px 100px 300px 300px;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	margin: auto;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0.9;
+}
+
+.btn:hover {
+	opacity: 1;
+}
+
+form {}
+
 /* Mobile */
 @media (max-width: 320px) {
 	.logo {
@@ -664,11 +760,44 @@ footer {
         transform: translateX(0%);
 */
 	}
-	
+
 	.sidenav a {
 		font-size: 18px;
 		top: 20%;
 
+	}
+
+	.contai {
+		position: absolute;
+		top: 0%;
+		left: 50%;
+		/* bring your own prefixes */
+		transform: translate(-50%, 10%);
+		box-shadow: 0px 0px 12px 0px;
+		top: 80px;
+		width: 70%;
+		padding: 15px;
+		background-color: white;
+		border-radius: 10px;
+	}
+
+	.contt {
+		height: 100vh;
+		display: flex;
+		align-items: center
+	}
+
+	/* Full-width input fields */
+	input[type=text],
+	input[type=tel],
+	textarea {
+		width: 85%;
+		padding: 15px;
+		margin: 5px;
+		color: white;
+		border: none;
+		background: #010101;
+		border-radius: 0px 100px 100px 100px;
 	}
 }
 
@@ -774,11 +903,44 @@ footer {
 		text-align: center;
 		padding-left: 0;
 	}
-	
+
 	.sidenav a {
 		font-size: 18px;
 		top: 20%;
 
+	}
+
+	.contai {
+		position: absolute;
+		top: 0%;
+		left: 50%;
+		/* bring your own prefixes */
+		transform: translate(-50%, 10%);
+		box-shadow: 0px 0px 12px 0px;
+		top: 80px;
+		width: 70%;
+		padding: 15px;
+		background-color: white;
+		border-radius: 10px;
+	}
+
+	.contt {
+		height: 100vh;
+		display: flex;
+		align-items: center
+	}
+
+	/* Full-width input fields */
+	input[type=text],
+	input[type=tel],
+	textarea {
+		width: 85%;
+		padding: 15px;
+		margin: 5px;
+		color: white;
+		border: none;
+		background: #010101;
+		border-radius: 0px 100px 100px 100px;
 	}
 }
 
@@ -822,109 +984,43 @@ footer {
 	.intro .column p {
 		width: 80%;
 	}
-	
-		.sidenav a {
+
+	.sidenav a {
 		font-size: 18px;
 		top: 20%;
 
 	}
-}
 
+	.contai {
+		position: absolute;
+		top: 0%;
+		left: 50%;
+		/* bring your own prefixes */
+		transform: translate(-50%, 10%);
+		box-shadow: 0px 0px 12px 0px;
+		top: 80px;
+		width: 70%;
+		padding: 15px;
+		background-color: white;
+		border-radius: 10px;
+	}
 
+	.contt {
+		height: 100vh;
+		display: flex;
+		align-items: center
+	}
 
-.header {
-	/*    background-color: brown;*/
-	font-family: 'Paytone One', sans-serif;
-	/*    height: 40px;*/
-
-}
-
-.btnn {
-	text-align: center;
-	width: 100%;
-	background-color: transparent;
-}
-
-
-
-
-
-
-
-.nav {
-	position: fixed;
-	right: 20px;
-	top: 20px;
-	z-index: 679;
-	font-size: 20px;
-	color: white;
-	cursor: pointer;
-	text-align: center;
-}
-
-.contai {
-	position: absolute;
-	top: 0%;
-	left: 50%;
-	/* bring your own prefixes */
-	transform: translate(-50%, 10%);
-	box-shadow: 0px 0px 12px 0px,
-		0px 0px 22px 0px,
-		0px 0px 32px 0px,
-		0px 0px 42px 0px,
-		0px 0px 52px 0px,
-		0px 0px 62px 0px;
-	top: 40px;
-	width: 70%;
-	padding: 16px;
-	background-color: white;
-	border-radius: 10px;
-}
-
-.contt {
-	height: 100vh;
-	display: flex;
-	align-items: center
-}
-
-/* Full-width input fields */
-input[type=text],
-input[type=tel],
-textarea {
-	width: 90%;
-	padding: 15px;
-	margin: 5px 0 22px 0;
-	color: white;
-	border: none;
-	background: #010101;
-	border-radius: 0px 100px 100px 100px;
-}
-
-input[type=text]:focus,
-input[type=tel]:focus {
-	background-color: #ddd;
-	outline: none;
-	color: black;
-
-}
-
-
-
-/* Set a style for the submit button */
-.btn {
-	background-color: darkblue;
-	color: white;
-	padding: 16px 20px;
-	border-radius: 100px 100px 300px 300px;
-	border: none;
-	cursor: pointer;
-	position: relative;
-	margin: auto;
-	left: 50%;
-	transform: translateX(-50%);
-	opacity: 0.9;
-}
-
-.btn:hover {
-	opacity: 1;
+	/* Full-width input fields */
+	input[type=text],
+	input[type=tel],
+	textarea {
+		width: 85%;
+		padding: 15px;
+		margin: 5px;
+		color: white;
+		border: none;
+		background: #010101;
+		border-radius: 0px 100px 100px 100px;
+	}
 }
