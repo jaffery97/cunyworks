@@ -1,18 +1,15 @@
 /* Body */
 body {
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-	background-image: url(../images/WhoppingWaryGalah-small.gif);
 	background-size: cover;
 	height: 100%;
-	width: 100%;
+	width: auto;
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-color: #2e2e2e;
 	padding: 0;
 	margin: 0;
-
-
 }
 
 
@@ -117,29 +114,25 @@ a:link {
 .gallery {
 	clear: both;
 	display: inline-block;
-	width: 100%;
-	background-color: #FFFFFF;
-	/* [disabled]min-width: 400px;
-*/
-	padding-bottom: 35px;
-	padding-top: 0px;
-	margin-top: -5px;
-	margin-bottom: 0px;
+	width:100%;
+	padding: 10px;
+
 
 }
 
-.gal:hover .thumbnail {
+.gal:hover{
 	/*   filter: blur(10px);*/
 	opacity: .4;
 }
 
-.gal .thumbnail:hover {
+.thumbnail:hover {
 	/*    filter: blur(0);*/
 	opacity: 10;
 }
 
 .thumbnail {
 	width: 23%;
+	height: 320px;
 	text-align: center;
 	float: left;
 	margin-top: 35px;
@@ -193,9 +186,9 @@ a:link {
 	z-index: -1;
 
 	display: block;
-	background-image: url(../images/blue-1634110.png);
+	/*	background-image: url(../images/blue-1634110.png);*/
 	/*     animation: intro 50s linear infinite;*/
-	height: 100%;
+
 	background-size: cover;
 	border-radius: 0px 50% 0px 0px;
 	-webkit-filter: blur(0px);
@@ -213,7 +206,6 @@ a:link {
 	z-index: 444;
 	filter: none;
 	position: relative;
-	height: 100vh;
 
 	background: #16222A;
 	/* fallback for old browsers */
@@ -225,79 +217,13 @@ a:link {
 	background-size: 100% 100%;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 20px;
-	padding-bottom: 35px;
+	height: 100vh;
 
 
 
 }
 
 
-
-@keyframes intro {
-
-	0% {
-		background-image: url(../slide/1.jpg);
-		background-size: 100% 100%;
-
-	}
-
-	10% {
-
-		background-image: url(../slide/1.jpg);
-		background-size: 100% 100%;
-	}
-
-	20% {
-
-		background-image: url(../slide/2.jpg);
-		background-size: 100% 100%;
-	}
-
-	30% {
-
-		background-image: url(../slide/3.jpg);
-		background-size: 100% 100%;
-	}
-
-	40% {
-
-		background-image: url(../slide/4.jpg);
-		background-size: 100% 100%;
-	}
-
-	50% {}
-
-	50% {
-
-		background-image: url(../slide/5.jpg);
-		background-size: 100% 100%;
-	}
-
-	60% {
-
-		background-image: url(../slide/6.jpg);
-		background-size: 100% 100%;
-	}
-
-	70% {
-
-		background-image: url(../slide/7.jpg);
-		background-size: 100% 100%;
-	}
-
-	80% {
-
-		background-image: url(../slide/8.jpg);
-		background-size: 100% 100%;
-	}
-
-	90% {
-
-		background-image: url(../slide/9.png);
-		background-size: 100% 100%;
-	}
-
-}
 
 .sidenav {
 	height: 100%;
@@ -479,12 +405,11 @@ a:link {
 }
 
 .cards {
-	width: 90%;
+	width: 80%;
 	height: 150px;
 	opacity: 0.8;
 	padding: 5px;
-	border: 2px solid black;
-
+	border: 1px solid red;
 }
 
 
@@ -553,21 +478,16 @@ a:link {
 
 .copyright {
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-color: #717070;
-	color: #FFFFFF;
-	text-transform: uppercase;
-	font-weight: lighter;
-	letter-spacing: 2px;
-	border-top-width: 2px;
+	background-color: gray;
+	color: black;
+	padding: 10px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	border-radius: 10px;
 }
 
-footer {
-	background: #485563;
-	padding-top: 60px;
-	padding-bottom: 60PX;
-}
+footer {}
 
 .intro {
 	display: inline-block;
@@ -699,10 +619,7 @@ form {}
 		clear: both;
 		display: inline-block;
 		width: 100%;
-		background-color: #FFFFFF;
-		/* [disabled]min-width: 400px;
-*/
-		margin: ;
+
 	}
 
 	.socialicon {
@@ -743,9 +660,7 @@ form {}
 	}
 
 	.intro {
-
-
-		height: 100%;
+		height: auto;
 	}
 
 	.contt {
@@ -843,10 +758,6 @@ form {}
 		clear: both;
 		display: inline-block;
 		width: 100%;
-		background-color: #FFFFFF;
-		/* [disabled]min-width: 400px;
-*/
-
 		margin: 0;
 	}
 
@@ -961,9 +872,6 @@ form {}
 		clear: both;
 		display: inline-block;
 		width: 100%;
-		background-color: #FFFFFF;
-		/* [disabled]min-width: 400px;
-*/
 		margin: 0;
 	}
 
@@ -1023,4 +931,19 @@ form {}
 		background: #010101;
 		border-radius: 0px 100px 100px 100px;
 	}
+}
+
+.portfolio_url {
+	text-align: center;
+	background-color: brown;
+	color: wheat;
+	position: relative;
+	float: left;
+	left: 20px;
+	font-size: 15px;
+	font-family: sans-serif;
+	cursor: pointer;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
 }
