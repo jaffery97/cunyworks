@@ -114,11 +114,16 @@ a:link {
 .gallery {
 	clear: both;
 	display: inline-block;
-	width:100%;
-	padding: 10px;
+	width:auto;
+	padding: 0px;
 
 
 }
+
+.gal {
+	padding-top: 55px;;
+}
+
 
 .gal:hover{
 	/*   filter: blur(10px);*/
