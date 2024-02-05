@@ -89,6 +89,7 @@ a:link {
 #demo {
 	color: aliceblue;
 	font-size: 25px;
+	padding: 10px;
 }
 
 .hero_header {
@@ -945,6 +946,7 @@ form {}
 	position: relative;
 	float: left;
 	left: 20px;
+	top: -12px;
 	font-size: 15px;
 	font-family: sans-serif;
 	cursor: pointer;
